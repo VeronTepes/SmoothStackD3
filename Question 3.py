@@ -1,18 +1,26 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Feb  7 11:30:51 2022
+Created on Mon Feb  7 11:49:15 2022
 
 @author: owner
 """
+import random
 
-n=5
+#guess number between 1 and 9
+random.seed()
+uInput = 0
+ranNum = random.randint(1,9)
 
-for i in range(1, n):
-    for j in range (0, i):
-        print("*", end="")
-    print("\n")
-        
-for i in range(n,0,-1):
-    for j in range(i):
-        print("*", end="")
-    print("\n")
+while (ranNum != uInput):
+    
+    uInput = input("Please guess a number between 1 and 9: ")
+    
+    uInput = int(uInput)
+    
+    if(ranNum > uInput):
+            print("Too low!")
+    elif(ranNum < uInput):
+            print("Too High!")
+    else:
+            print("Well guessed!")
+    
