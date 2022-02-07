@@ -18,11 +18,13 @@ if(tempFrom == "F" or tempFrom == "f"):
     #c=5*((f-32)/9)
     tempTo = "C"
     finalTemp = 5*((float(convTemp)-32)/9)
-    print(str(convTemp) + " Degrees " + tempFrom.capitalize() + " is " + str(finalTemp) + " Degrees " + tempTo.capitalize())
+    print(str(convTemp) + " Degrees " + tempFrom.capitalize() + " is " + str(finalTemp) + 
+          " Degrees " + tempTo.capitalize())
     
 else:
     #convert c to f
     #f = 9*(c/5)+32
     tempTo = "F"
     finalTemp = (9*(float(convTemp)/5))+32
-    print(str(convTemp) + " Degrees " + tempFrom.capitalize() + " is " + str(finalTemp) + " Degrees " + tempTo.capitalize())
+    print(str(convTemp) + " Degrees " + tempFrom.capitalize() + " is " + str(finalTemp) + 
+          " Degrees " + tempTo.capitalize())
